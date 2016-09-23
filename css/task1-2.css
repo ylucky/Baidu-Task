@@ -97,6 +97,8 @@ article ol {
 table {
   width: 100%;
   text-align: center;
+  border-collapse: collapse;
+  /*设置表格的边框被合并为一个单一的边框*/
 }
 table thead {
   background: #333;
