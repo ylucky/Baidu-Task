@@ -7,3 +7,5 @@
 
 知识点：
 1.border-collapse: collapse; 设置表格的边框被合并为一个单一的边框
+2.overflow:auto;高度随着内容自动向下延伸
+3.三栏布局，左右两边浮动，设置中间margin左右值即可。
