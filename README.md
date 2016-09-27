@@ -1,8 +1,8 @@
 # Baidu-Task
 百度前端任务
 
-查资料的过程中，看到了百度前端技术学院（链接：http://ife.baidu.com/task/all）
-的阶段任务，觉得十分不错，所以我决定依次把这个任务做下去。一方面可以检验自己，另一方面可以比对别人提交的代码，改正自己不足之处。
+查资料的过程中，看到了百度前端技术学院（链接：http://ife.baidu.com/task/all
+）的阶段任务，觉得十分不错，所以我决定依次把这个任务做下去。一方面可以检验自己，另一方面可以比对别人提交的代码，改正自己不足之处。
 本代码仅供自己记录和学习。欢迎大家指出不足之处。
 
 知识点：
@@ -18,4 +18,33 @@ border-radius可以同时设置1到4个值。
  border-radius链接博客
 （http://blog.sina.com.cn/s/blog_61671b520101gelr.html）
 5.页面某一个版块固定，其他版块谁浏览器大小自适应，则浮动固定版块，自适应版块设置margin值古典版块即可，*千万不要写width*！
-6.
+6.  css
+a.text-decoration: underline;//下划线：
+b.text-transform：
+		Capitalize 英文拼音的首字母大写
+		Uppercase 英文拼音字母全大写
+		Lowercase 英文拼音字母全小写
+c.透明度：
+	opacity: 0.7;
+	filter:alpha(opacity=70);/*IE*/
+	-moz-opacity:0.7;/*ff*/
+d.字间距：
+	word-spacing 属性增加或减少单词间的空白（即字间隔）。
+	letter-spacing 属性增加或减少字符间的空白（字符间距）。
+e.斜体：
+	font-style:normal;
+	font-style:italic; /* 浏览器会显示一个斜体的字体样式。 */
+	font-style:oblique;/*浏览器会显示一个倾斜的字体样式。 */
+f:c3选择器
+	p:nth-child(2)   表示这个元素要是p标签，且是第二个子元素，是两个必须满足的条件。
+	                 //first-child ,last-child
+	p:nth-of-type(2) 表示父标签下的第二个p元素,不要在第二个位置。     
+				     //first-of-type ,last-of-type
+	p:not(:first-of-type)  选择器匹配非指定元素/选择器的每个元素。
+g:背景颜色透明
+	filter: Alpha(Opacity=50) /* for IE */
+    background-color: rgba(0, 0, 0, 0.5); /*for FF*/
+h:字体
+	font: italic 21px/24px "黑体";
+	font:italic 12px "Microsoft YaHei";
+	font: 16px/41px "宋体";
