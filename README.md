@@ -24,44 +24,51 @@ a.text-decoration: underline;//下划线：<br/>
 b.text-transform：<br/>
 		Capitalize 英文拼音的首字母大写
 		Uppercase 英文拼音字母全大写
-		Lowercase 英文拼音字母全小写
+		Lowercase 英文拼音字母全小写<br/>
 c.透明度：<br/>
 	opacity: 0.7;
 	filter:alpha(opacity=70);/*IE*/
-	-moz-opacity:0.7;/*ff*/
+	-moz-opacity:0.7;/*ff*/<br/>
 d.字间距：<br/>
 	word-spacing 属性增加或减少单词间的空白（即字间隔）。
-	letter-spacing 属性增加或减少字符间的空白（字符间距）。
+	letter-spacing 属性增加或减少字符间的空白（字符间距）。<br/>
 e.斜体：<br/>
 	font-style:normal;
 	font-style:italic; /* 浏览器会显示一个斜体的字体样式。 */
-	font-style:oblique;/*浏览器会显示一个倾斜的字体样式。 */
+	font-style:oblique;/*浏览器会显示一个倾斜的字体样式。 */<br/>
 f:c3选择器<br/>
 	p:nth-child(2)   表示这个元素要是p标签，且是第二个子元素，是两个必须满足的条件。
 	                 //first-child ,last-child
 	p:nth-of-type(2) 表示父标签下的第二个p元素,不要在第二个位置。     
 				     //first-of-type ,last-of-type
-	p:not(:first-of-type)  选择器匹配非指定元素/选择器的每个元素。
+	p:not(:first-of-type)  选择器匹配非指定元素/选择器的每个元素。<br/>
 g:背景颜色透明<br/>
 	filter: Alpha(Opacity=50);/* for IE */
-    background-color: rgba(0, 0, 0, 0.5); /*for FF*/
+    background-color: rgba(0, 0, 0, 0.5); /*for FF*/<br/>
 h:字体<br/>
-	font:italic bold 12px/30px arial,sans-serif;
+	font:italic bold 12px/30px arial,sans-serif;<br/>
 i:背景图大小自适应<br/>
 	background: url(../img/task7-banner.jpg) no-repeat;
 	background-size:cover;
 	-moz-background-size:cover;
-	-webkit-background-size:cover;
+	-webkit-background-size:cover;<br/>
 j:文本域禁止拖动大小<br/>
 	resize: none;
 k:点击有蓝边<br/>
 	a,input,button,select{
 		border:0;outline:none;		
-	}
+	}<br/>
 l:css3画三角形<br/>
 	把元素的宽度、高度设为0。然后设置边框样式。
-	http://www.jb51.net/article/42513.htm
+	http://www.jb51.net/article/42513.htm<br/>
 m:select去掉默认的小三角<br/>
 	appearance:none;
 	-moz-appearance:none; /* Firefox */
-	-webkit-appearance:none; /* Safari 和 Chrome */
+	-webkit-appearance:none; /* Safari 和 Chrome */<br/>
+n:设置一个元素为 box-sizing: border-box; 时，<br/>
+  此元素的内边距和边框不再会增加它的宽度。<br/>
+	* {
+	 box-sizing:border-box;
+	 -moz-box-sizing:border-box; /* Firefox */
+	 -webkit-box-sizing:border-box; /* Safari */
+	}<br/>
