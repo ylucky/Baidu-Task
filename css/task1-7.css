@@ -1,0 +1,581 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/*font-family*/
+.container {
+  font-size: 12px;
+  color: #999;
+}
+.container a,
+.container input,
+.container button,
+.container select,
+.container option {
+  border: 0;
+  outline: none;
+}
+.container a {
+  text-decoration: none;
+}
+header {
+  width: 1280px;
+  margin: 0 auto;
+  height: 56px;
+  line-height: 56px;
+}
+header .logo {
+  float: left;
+}
+header .logo span {
+  display: inline-block;
+  height: 31px;
+  padding-left: 42px;
+  color: #333;
+  font: 21px/31px "黑体";
+  background: url(../img/task7-logo.png) left center no-repeat;
+}
+header .header_right {
+  height: 56px;
+  overflow: hidden;
+  font: 14px "Microsoft YaHei";
+}
+header .header_right ul {
+  float: right;
+  list-style-type: none;
+}
+header .header_right ul li {
+  float: left;
+}
+header .header_right ul li a {
+  width: 65px;
+  height: 56px;
+  line-height: 56px;
+  display: inline-block;
+  text-align: center;
+  margin-right: 30px;
+  color: #666699;
+}
+header .header_right ul li a:hover,
+header .header_right ul li .current {
+  height: 51px;
+  color: #ff6666;
+  border-bottom: solid 5px #ff6666;
+}
+header .header_right .user {
+  float: right;
+  margin-right: 67px;
+  background: url(../img/task7-user.png) left center no-repeat;
+  padding-left: 19px;
+}
+header .header_right .user a {
+  height: 56px;
+  line-height: 56px;
+  display: inline-block;
+  color: #ff6666;
+}
+.banner {
+  width: 100%;
+  height: 690px;
+  background: url(../img/task7-banner.jpg) no-repeat;
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  position: relative;
+}
+.banner .gray {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.2;
+  filter: alpha(opacity=20);
+  z-index: 1;
+}
+.banner .banner_content {
+  width: 1280px;
+  margin: 0 auto;
+  overflow: hidden;
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  margin-left: -640px;
+  z-index: 2;
+}
+.banner .banner_content h1 {
+  font: 60px "Microsoft YaHei";
+  margin-top: 232px;
+  margin-bottom: 30px;
+  margin-left: 118px;
+}
+.banner .banner_content p {
+  font: 21px/32px "Microsoft YaHei";
+  margin-bottom: 62px;
+  margin-left: 124px;
+}
+.banner .banner_content button {
+  width: 331px;
+  height: 65px;
+  font: 30px/65px "Microsoft YaHei";
+  color: #fff;
+  border: none;
+  background: #ff6666;
+  margin-left: 126px;
+}
+.icons {
+  width: 1280px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.icons section {
+  width: 25%;
+  text-align: center;
+  float: left;
+  margin-bottom: 65px;
+}
+.icons section span {
+  display: inline-block;
+  width: 42px;
+  height: 42px;
+  margin: 65px 0;
+}
+.icons section .icon1 {
+  background: url(../img/task7-icons.png) no-repeat 0 0px;
+}
+.icons section .icon2 {
+  background: url(../img/task7-icons.png) no-repeat 0 -42px;
+}
+.icons section .icon3 {
+  background: url(../img/task7-icons.png) no-repeat 0 -84px;
+}
+.icons section .icon4 {
+  background: url(../img/task7-icons.png) no-repeat 0 -126px;
+}
+.icons section p {
+  text-align: center;
+  color: #666;
+  font: 14px/18px "黑体";
+  height: 52px;
+  border-right: solid 1px #666;
+}
+.icons section .icon4 + p {
+  border-right: none;
+}
+.book {
+  background: #ededec;
+  width: 100%;
+  text-align: center;
+  padding-top: 89px;
+  overflow: hidden;
+}
+.book h1 {
+  color: #333;
+  font: 54px "黑体";
+  margin-top: 50px;
+  margin-bottom: 83px;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+.title {
+  width: 100%;
+  text-align: center;
+  font-family: "Microsoft YaHei";
+}
+.title h2 {
+  padding-top: 53px;
+  font-size: 21px;
+  color: #fff;
+}
+.title small {
+  display: inline-block;
+  width: 31px;
+  height: 3px;
+  background: #fff;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+.title p {
+  color: #fff;
+  margin-bottom: 53px;
+}
+.search {
+  background: url(../img/task7-map.jpg) repeat-x;
+  background-size: cover;
+}
+.search .select {
+  width: 1280px;
+  text-align: center;
+}
+.search .select select,
+.search .select button {
+  -webkit-appearance: none;
+  /*for chrome*/
+  width: 223px;
+  height: 36px;
+  padding-left: 13px;
+  line-height: 36px;
+  border: none;
+  font: 12px "Microsoft YaHei";
+  color: #999;
+  margin-right: 28px;
+}
+.search .select select {
+  background: #ffffff url(../img/task7-select.png) 195px center no-repeat;
+}
+.search .select option {
+  height: 27px;
+  line-height: 27px;
+  background: #e4e3e5;
+  border: solid 1px #ff6666;
+}
+.search .select option:hover {
+  background: #ff6666;
+}
+.search .select button {
+  background: #ff6666;
+  font: 14px "Microsoft YaHei";
+  color: #fff;
+  margin-bottom: 134px;
+  cursor: pointer;
+  padding-left: 0;
+  width: 236px;
+}
+.photoes {
+  width: 1280px;
+  margin: 0 auto;
+  height: 605px;
+  background: url(../img/task7-images.png) center center no-repeat;
+}
+.photoes h3 {
+  font: 14px #fontMSYH;
+  color: #333;
+  margin-bottom: 13px;
+  margin-left: 8px;
+}
+.photoes h2 {
+  font: 22px "Microsoft YaHei";
+  color: #333;
+  letter-spacing: 27px;
+  margin-bottom: 8px;
+}
+.photoes div {
+  display: inline-block;
+  float: left;
+  text-align: center;
+  margin-top: 450px;
+}
+.photoes .photo1 {
+  margin-left: 221px;
+}
+.photoes .photo2 {
+  margin-left: 123px;
+  margin-top: 102px;
+}
+.photoes .photo3 {
+  margin-left: 110px;
+}
+.photoes .photo4 {
+  margin-left: 159px;
+}
+.newword {
+  width: 100%;
+  height: 570px;
+}
+.newword .newword_left {
+  width: 66.7%;
+  height: 100%;
+  text-align: center;
+  float: left;
+  background: url(../img/task7-man.jpg) no-repeat;
+  background-size: cover;
+  font-family: "Microsoft YaHei";
+  color: #fff;
+  position: relative;
+}
+.newword .newword_left h1 {
+  font-size: 158px;
+}
+.newword .newword_left h2 {
+  font-size: 50px;
+  margin-top: 132px;
+}
+.newword .newword_left span {
+  font-size: 22px;
+  display: block;
+}
+.newword .newword_left small {
+  position: absolute;
+  top: 268px;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-right: 26px solid #fff;
+  border-bottom: 15px solid transparent;
+}
+.newword .newword_right {
+  width: 23.3%;
+  text-align: center;
+  float: right;
+  padding: 165px 5% 0 5%;
+}
+.newword .newword_right .newword_title {
+  color: #333;
+  font: 20px "黑体";
+  margin-bottom: 30px;
+}
+.newword .newword_right .newword_title span {
+  color: #ff6666;
+}
+.newword .newword_right p {
+  font-family: "宋体";
+  line-height: 30px;
+  margin-bottom: 32px;
+}
+.newword .newword_right button {
+  width: 107px;
+  height: 35px;
+  line-height: 35px;
+  font: 12px "Microsoft YaHei";
+  color: #ff6666;
+  background: #fff;
+  border: solid 1px #ff6666;
+  margin-bottom: 25px;
+  cursor: pointer;
+}
+.newword .newword_right .tab_button input {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: solid 1px #999;
+  background: #fff;
+  cursor: pointer;
+}
+.newword .newword_right .tab_button input.cur {
+  background: #999;
+}
+.woman {
+  width: 100%;
+  height: 520px;
+  text-align: center;
+}
+.woman .title {
+  color: #333;
+}
+.woman section {
+  width: 33.3%;
+  height: 100%;
+  float: left;
+  position: relative;
+}
+.woman section .title {
+  font-family: "黑体";
+  margin-top: 172px;
+}
+.woman section img {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+.woman section button {
+  width: 170px;
+  height: 44px;
+  line-height: 44px;
+  font: 21px "黑体";
+  cursor: pointer;
+}
+.woman section .triangle {
+  position: absolute;
+  top: 268px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-top: 15px solid transparent;
+  border-left: 26px solid #fff;
+  border-bottom: 15px solid transparent;
+  z-index: 2;
+}
+.woman section .gray {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: #000;
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+  z-index: 1;
+}
+.woman section:nth-child(1) {
+  background: #ff6666;
+}
+.woman section:nth-child(1) button {
+  color: #fff;
+  background: #ff6666;
+  border: solid 1px #fff;
+}
+.woman section:nth-child(2) {
+  background: #fff;
+}
+.woman section:nth-child(2) .title h2 {
+  color: #333;
+}
+.woman section:nth-child(2) .title small {
+  background: #999;
+}
+.woman section:nth-child(2) button {
+  color: #ff6666;
+  background: #fff;
+  border: solid 1px #ff6666;
+}
+.volunteer {
+  width: 1280px;
+  height: 750px;
+  margin: 0 auto;
+}
+.volunteer .title {
+  margin-bottom: 53px;
+  overflow: hidden;
+}
+.volunteer .title h2 {
+  color: #333;
+}
+.volunteer .title small {
+  background: #ff6666;
+}
+.volunteer .title p {
+  color: #999;
+}
+.volunteer .volunteer_left {
+  width: 285px;
+  float: left;
+  padding-left: 140px;
+  padding-right: 75px;
+}
+.volunteer .volunteer_left h3 {
+  font: 14px "黑体";
+  color: #333;
+  margin-bottom: 27px;
+}
+.volunteer .volunteer_left p {
+  line-height: 21px;
+}
+.volunteer .volunteer_left .more {
+  display: block;
+  text-align: right;
+  background: url(../img/task7-triangle.png) 246px center no-repeat;
+  color: #999;
+  margin-bottom: 18px;
+}
+.volunteer .volunteer_right {
+  width: 658px;
+  float: left;
+  padding-right: 122px;
+  overflow: hidden;
+}
+.volunteer .volunteer_right input,
+.volunteer .volunteer_right button {
+  padding-left: 19px;
+  width: 301px;
+  height: 41px;
+  line-height: 41px;
+  border: none;
+  background: #ededef;
+  margin-right: 18px;
+  margin-bottom: 15px;
+  float: left;
+}
+.volunteer .volunteer_right .mrnone {
+  margin-right: 0;
+}
+.volunteer .volunteer_right textarea {
+  width: 94%;
+  height: 101px;
+  margin-bottom: 15px;
+  border: none;
+  background: #ededef;
+  resize: none;
+  padding: 10px 3%;
+}
+.volunteer .volunteer_right button {
+  width: 100%;
+  font: 14px "黑体";
+}
+.contact {
+  width: 100%;
+  height: 358px;
+  text-align: center;
+  background: #32353e;
+}
+.contact .title p {
+  margin-top: 12px;
+}
+.contact .email {
+  margin-bottom: 37px;
+}
+.contact .email input[type="text"] {
+  width: 420px;
+  height: 39px;
+  padding-left: 9px;
+  border: solid 1px #999;
+}
+.contact .email input[type="button"] {
+  width: 81px;
+  height: 41px;
+  text-align: center;
+  background: #999;
+  color: #fff;
+  border: none;
+  font: 15px #fontMSYH;
+}
+.contact ul {
+  width: 187px;
+  height: 25px;
+  overflow: hidden;
+  margin: 0 auto;
+  list-style-type: none;
+}
+.contact ul li {
+  float: left;
+  margin-right: 29px;
+}
+.contact ul li a {
+  width: 25px;
+  height: 25px;
+  display: inline-block;
+}
+.contact ul li .qq {
+  background: url(../img/task7-contacts.png) 0 0 no-repeat;
+}
+.contact ul li .weibo {
+  background: url(../img/task7-contacts.png) -52px 0 no-repeat;
+}
+.contact ul li .twitter {
+  background: url(../img/task7-contacts.png) -109px 0 no-repeat;
+}
+.contact ul li .earth {
+  background: url(../img/task7-contacts.png) -158px 0 no-repeat;
+}
+.contact ul li:nth-child(4) {
+  margin-right: 0;
+}
+footer {
+  width: 100%;
+  height: 59px;
+  line-height: 59px;
+  background: #2f2f38;
+  color: #fff;
+}
+footer .footer {
+  width: 1280px;
+  margin: 0 auto;
+}
+footer .footer .footer_left {
+  margin-left: 100px;
+}
+footer .footer .footer_right {
+  float: right;
+  margin-right: 40px;
+}
