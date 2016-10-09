@@ -1,0 +1,678 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/*font-family*/
+.none {
+  display: none;
+}
+select,
+button {
+  cursor: pointer;
+}
+/*header*/
+header {
+  position: fixed;
+  z-index: 2;
+  width: 100%;
+  height: 56px;
+  line-height: 56px;
+  background: #2289bf;
+}
+header .header {
+  width: 1280px;
+  margin: 0 auto;
+}
+header .header img {
+  margin-left: 50px;
+  display: inline-block;
+  vertical-align: middle;
+}
+header .header .header_right {
+  float: right;
+}
+header .header .header_right input[type="text"] {
+  padding-left: 37px;
+  width: 276px;
+  height: 28px;
+  line-height: 28px;
+  border: none;
+  border-radius: 14px;
+  background: #ffffff url(../img/task9-search.png) no-repeat 17px 6px;
+}
+header .header .header_right span {
+  cursor: pointer;
+  color: #fff;
+  font: 12px "黑体";
+}
+header .header .header_right span i {
+  margin-left: 21px;
+  margin-right: 3px;
+}
+/* container */
+.container {
+  width: 1280px;
+  height: 100%;
+  margin: 0 auto;
+  overflow-y: auto;
+  background: #2a2e3d;
+}
+.container nav {
+  position: fixed;
+  top: 56px;
+  width: 260px;
+  height: 100%;
+  float: left;
+  font: 12px "黑体";
+}
+.container nav .nav_cur {
+  background: #383d4e;
+}
+.container nav i {
+  margin-right: 13px;
+}
+.container nav .author {
+  width: 100%;
+  color: #fff;
+}
+.container nav .author section {
+  padding-left: 46px;
+  overflow: hidden;
+}
+.container nav .author section .head_content .head {
+  float: left;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  border: solid 1px #ccc;
+  background: #333;
+  margin-right: 18px;
+  margin-bottom: 24px;
+  margin-top: 20px;
+}
+.container nav .author section .head_content .head img {
+  display: inline-block;
+  width: 47px;
+  height: 47px;
+  border-radius: 50%;
+  margin-top: 4px;
+  margin-left: 4px;
+}
+.container nav .author section .head_content span {
+  line-height: 98px;
+}
+.container nav .author section .number {
+  clear: both;
+  margin-bottom: 24px;
+  overflow: hidden;
+  margin-left: -40px;
+}
+.container nav .author section .number span {
+  color: #67778b;
+  font: 14px "黑体";
+  display: inline-block;
+  width: 45%;
+  text-align: center;
+  float: left;
+}
+.container nav .author section .number span:nth-of-type(1) {
+  border-right: solid 1px #555;
+}
+.container nav ul {
+  list-style-type: none;
+}
+.container nav ul li {
+  padding-left: 46px;
+}
+.container nav ul li a {
+  color: #67778b;
+  line-height: 44px;
+  text-decoration: none;
+}
+.container nav ul li:hover {
+  cursor: pointer;
+  background: #383d4e;
+}
+.container nav ul .margin_second {
+  margin-left: 24px;
+}
+.container nav ul .margin_third {
+  margin-left: 42px;
+}
+.container .content_right {
+  width: 1020px;
+  float: right;
+  background: #eee;
+  margin-top: 56px;
+}
+.container .content_right .address {
+  padding-left: 30px;
+  height: 30px;
+  font: 12px/30px "黑体";
+  background: #fff;
+}
+.container .content_right .address .address_cur {
+  color: #6699cc;
+}
+.container .content_right .address a {
+  color: #999;
+  text-decoration: none;
+}
+.container .content_right .search {
+  padding: 15px 30px;
+  border: solid 1px #ccc;
+  margin: 20px 60px 8px 60px;
+  overflow: hidden;
+  background: #fff;
+}
+.container .content_right .search label span {
+  color: #999;
+  font: 12px "黑体";
+  margin-right: 15px;
+}
+.container .content_right .search label select {
+  height: 26px;
+  line-height: 26px;
+  border: solid 1px #ccc;
+}
+.container .content_right .search .search_first {
+  float: left;
+  margin-right: 38px;
+}
+.container .content_right .search .search_first span {
+  width: 50px;
+}
+.container .content_right .search .search_first select {
+  width: 71px;
+}
+.container .content_right .search .search_second {
+  position: relative;
+  display: inline-block;
+  margin-right: 60px;
+}
+.container .content_right .search .search_second span {
+  width: 39px;
+}
+.container .content_right .search .search_second label {
+  display: block;
+}
+.container .content_right .search .search_second label select {
+  width: 121px;
+}
+.container .content_right .search .search_second label:nth-child(1) {
+  margin-bottom: 10px;
+}
+.container .content_right .search .search_second .change {
+  width: 27px;
+  height: 35px;
+  color: #fff;
+  text-align: right;
+  position: absolute;
+  left: 172px;
+  top: 14px;
+  border: none;
+  background: url(../img/task9-change.png) center center no-repeat;
+}
+.container .content_right .search .search_third {
+  display: inline-block;
+}
+.container .content_right .search .search_third label {
+  display: block;
+}
+.container .content_right .search .search_third label:nth-child(1) {
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+.container .content_right .search .search_fourth {
+  display: inline-block;
+}
+.container .content_right .search .search_fourth label {
+  display: block;
+}
+.container .content_right .search .search_fourth label:nth-child(1) {
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+.container .content_right .search .search_fourth label:nth-child(2) {
+  margin-left: -57px;
+}
+.container .content_right .search .search_fourth label:nth-child(2) select {
+  display: inline-block;
+  width: 121px;
+}
+.container .content_right .search button {
+  width: 51px;
+  height: 26px;
+  line-height: 26px;
+  background: #388ac1;
+  border: none;
+  color: #fff;
+  display: inline-block;
+  float: right;
+  margin-top: 15px;
+  margin-right: 35px;
+}
+.container .price {
+  overflow: hidden;
+  margin: 0 60px;
+}
+.container .price .price_right,
+.container .price .price_left {
+  float: left;
+  display: inline-block;
+  width: 29px;
+  height: 63px;
+  line-height: 63px;
+  text-align: center;
+  border-top: solid 1px #ccc;
+  border-left: solid 1px #ccc;
+  background: #fff;
+  margin-right: 5px;
+}
+.container .price figure {
+  float: left;
+  margin-right: 4px;
+  width: 111px;
+  height: 63px;
+  text-align: center;
+  display: inline-block;
+  border-top: solid 1px #ccc;
+  border-left: solid 1px #ccc;
+  background: #fff;
+}
+.container .price figure figcaption p {
+  font: 12px "Microsoft YaHei";
+  color: #666;
+  margin-top: 11px;
+  margin-bottom: 3px;
+}
+.container .price figure figcaption span {
+  font: 21px "Microsoft YaHei";
+  color: #ff6600;
+}
+.container .price figure figcaption span i {
+  color: #ccc;
+}
+.container .price .fcur,
+.container .price figure:hover {
+  border-top: solid 4px #3399cc;
+  height: 61px;
+  cursor: pointer;
+}
+.container .price .price_calendar {
+  float: right;
+  width: 130px;
+  height: 64px;
+  color: #666;
+  font: 12px/64px "Microsoft YaHei";
+  border-top: solid 1px #ccc;
+  border-left: solid 1px #ccc;
+  background: #fff;
+  text-align: center;
+}
+.container .price .price_calendar i {
+  color: #388ac1;
+}
+.container .count {
+  clear: both;
+  margin: 0 60px;
+}
+.container .count h3 {
+  height: 24px;
+  text-align: left;
+  margin-top: 15px;
+  font: 12px/24px "Microsoft YaHei";
+  color: #333;
+}
+.container .count figure {
+  float: left;
+  padding-left: 8px;
+  width: 191px;
+  background: #fff;
+  border: solid 1px #ccc;
+  margin-right: 28px;
+  margin-bottom: 13px;
+}
+.container .count figure figcaption {
+  display: inline-block;
+  overflow: hidden;
+}
+.container .count figure figcaption p {
+  color: #333;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font: 12px "黑体";
+}
+.container .count figure figcaption span {
+  color: #999;
+  font: 10px "黑体";
+  margin-bottom: 16px;
+  display: inline-block;
+}
+.container .count figure .deal {
+  float: right;
+  width: 61px;
+  height: 47px;
+  margin-top: 12px;
+  margin-right: 15px;
+}
+.container .count figure:nth-of-type(1) {
+  border-left: solid 4px #339999;
+}
+.container .count figure:nth-of-type(1) .deal {
+  background: #339999;
+}
+.container .count figure:nth-of-type(2) {
+  border-left: solid 4px #3399cc;
+}
+.container .count figure:nth-of-type(2) .deal {
+  background: #3399cc;
+}
+.container .count figure:nth-of-type(3) {
+  border-left: solid 4px #cc3333;
+}
+.container .count figure:nth-of-type(3) .deal {
+  background: #cc3333;
+}
+.container .count figure:nth-of-type(4) {
+  margin-right: 0;
+  border-left: solid 4px #cccc33;
+}
+.container .count figure:nth-of-type(4) .deal {
+  background: #cccc33;
+}
+.container .project {
+  clear: both;
+  margin: 0 60px;
+  overflow: hidden;
+}
+.container .project .project_left,
+.container .project .project_right {
+  width: 531px;
+  float: left;
+  border: solid 1px #ccc;
+  border-radius: 9px;
+  background: #fff;
+}
+.container .project .project_left h3,
+.container .project .project_right h3 {
+  padding-left: 19px;
+  color: #999;
+  height: 41px;
+  font: 12px/41px "Microsoft YaHei";
+  border-bottom: solid 1px #e6e8eb;
+  background: #f4f5f7;
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px;
+}
+.container .project .project_left .tab,
+.container .project .project_right .tab,
+.container .project .project_left table,
+.container .project .project_right table {
+  background: #fff;
+}
+.container .project .project_left {
+  height: 365px;
+  overflow: hidden;
+}
+.container .project .project_left ul {
+  list-style-type: none;
+}
+.container .project .project_left ul li {
+  float: left;
+  margin-right: 3px;
+}
+.container .project .project_left ul li input,
+.container .project .project_left ul li div {
+  display: none;
+}
+.container .project .project_left ul li table {
+  width: 100%;
+  text-align: center;
+  border-color: #ccc;
+  line-height: 28px;
+  border-collapse: collapse;
+}
+.container .project .project_left ul li table td {
+  font: 12px "宋体";
+  width: 100px;
+  line-height: 28px;
+}
+.container .project .project_left .tab {
+  padding-top: 12px;
+  position: relative;
+  height: 27px;
+  margin-left: 20px;
+}
+.container .project .project_left .tab label {
+  cursor: pointer;
+  width: 86px;
+  height: 27px;
+  display: block;
+  text-align: center;
+  line-height: 27px;
+  background: #ededf0;
+  border: 1px solid #ededf0;
+  border-radius: 5px 5px 0 0;
+  color: #535353;
+  font: 12px/28px "Microsoft YaHei";
+}
+.container .project .project_left .tab .tab_title [id^='tab']:checked ~ label {
+  position: relative;
+  z-index: 1;
+  border: 1px solid #cacbcb;
+  border-bottom: none;
+  background: #fff;
+  height: 28px;
+}
+.container .project .project_left .tab .tab_title [id^='tab']:checked ~ [id^='tab_menu'] {
+  display: block;
+  position: absolute;
+  width: 403px;
+  border: 1px solid #cacbcb;
+  border-radius: 0 5px 5px;
+  padding: 28px 49px 35px 38px;
+  left: 0;
+  top: 40px;
+}
+.container .project .project_right {
+  width: 351px;
+  float: right;
+  border: solid 1px #ccc;
+  border-top-left-radius: 2%;
+  border-top-right-radius: 2%;
+  background: #fff;
+}
+.container .project .project_right table {
+  border-collapse: collapse;
+  margin: 17px 28px 5px;
+}
+.container .project .project_right table td {
+  height: 44px;
+  line-height: 44px;
+  padding-left: 12px;
+}
+.container .project .project_right table span {
+  color: #ccc;
+  font: 12px "Microsoft YaHei";
+  display: block;
+  margin-bottom: 4px;
+  margin-top: 4px;
+}
+.container .project .project_right table strong,
+.container .project .project_right table textarea {
+  color: #666;
+  font: 12px "Microsoft YaHei";
+  display: block;
+}
+.container .project .project_right table .border:nth-child(1) {
+  width: 94px;
+}
+.container .project .project_right table .border {
+  border-top: solid 1px #ccc;
+  border-bottom: solid 1px #ccc;
+}
+.container .project .project_right table .border-right {
+  border-right: solid 1px #ccc;
+}
+.container .project .project_right table textarea {
+  width: 281px;
+  height: 120px;
+  border: none;
+  border-bottom: solid 1px #ccc;
+  resize: none;
+}
+.container .project .project_right .comply {
+  width: 289px;
+  overflow: hidden;
+  padding: 0 28px 37px 34px;
+  display: inline-block;
+}
+.container .project .project_right .comply label {
+  display: inline-block;
+  width: 230px;
+}
+.container .project .project_right .comply label span {
+  display: inline-block;
+  font: 12px "Microsoft YaHei";
+  color: #ccc;
+}
+.container .project .project_right .comply button {
+  display: inline-block;
+  width: 51px;
+  height: 26px;
+  line-height: 26px;
+  color: #fff;
+  background: #3399cc;
+  border: none;
+}
+.container .project2 {
+  margin-top: 8px;
+  margin-bottom: 154px;
+}
+.container .project2 .calendar {
+  width: 351px;
+}
+.container .project2 .calendar .select {
+  padding: 10px 20px;
+}
+.container .project2 .calendar .select select,
+.container .project2 .calendar .select button {
+  height: 23px;
+  line-height: 23px;
+  border: solid 1px #ccc;
+}
+.container .project2 .calendar .select select {
+  width: 77px;
+  margin-bottom: 10px;
+}
+.container .project2 .calendar .select button {
+  background: #fff;
+}
+.container .project2 .calendar table {
+  width: 100%;
+}
+.container .project2 .calendar table thead th {
+  color: #666;
+  font: 12px/30px "黑体";
+  border-top: solid 1px #99ccff;
+  border-bottom: solid 1px #ccc;
+  height: 30px;
+}
+.container .project2 .calendar table tr td:last-child span,
+.container .project2 .calendar table tr td:nth-last-child(2) span {
+  color: red;
+}
+.container .project2 .calendar table td {
+  width: 14%;
+  height: 49px;
+  text-align: center;
+  font: 12px "黑体";
+}
+.container .project2 .calendar table td .red {
+  color: #cc0033;
+}
+.container .project2 .calendar table td span {
+  display: block;
+}
+.container .project2 .calendar table td:hover,
+.container .project2 .calendar table .date_cur {
+  cursor: pointer;
+  border: solid 1px #ffcc66;
+  height: 47px;
+}
+.container .project2 .rank {
+  width: 531px;
+  float: right;
+}
+.container .project2 .rank table {
+  border-collapse: collapse;
+  border-bottom-left-radius: 9px;
+  border-bottom-right-radius: 9px;
+  margin: 20px 40px;
+}
+.container .project2 .rank table tbody tr:hover {
+  cursor: pointer;
+  background: #f3f5f7;
+}
+.container .project2 .rank table td,
+.container .project2 .rank table th {
+  display: table-cell;
+  color: #333;
+  font: 12px "黑体";
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  border: solid 1px #ccc;
+}
+.container .project2 .rank table tr:nth-child(-n+4) p {
+  background: #ec6d51;
+}
+.container .project2 .rank table tr:nth-child(n+5) p {
+  background: #7ecaf0;
+}
+.container .project2 .rank table .progress_bar {
+  display: inline-block;
+  width: 168px;
+  height: 4px;
+  background: #dcdcdc;
+  position: relative;
+  top: -1px;
+  margin-left: 10px;
+}
+.container .project2 .rank table .progress_bar p {
+  height: 4px;
+}
+.container .project2 .rank table .w80_perc {
+  width: 80%;
+}
+.container .project2 .rank table .w70_perc {
+  width: 70%;
+}
+.container .project2 .rank table .w60_perc {
+  width: 60%;
+}
+.container .project2 .rank table .w55_perc {
+  width: 55%;
+}
+.container .project2 .rank table .w50_perc {
+  width: 50%;
+}
+.container .project2 .rank table .w40_perc {
+  width: 40%;
+}
+.container .project2 .rank table .w35_perc {
+  width: 35%;
+}
+.container .project2 .rank table .w30_perc {
+  width: 30%;
+}
+.container .project2 .rank table .w28_perc {
+  width: 28%;
+}
+.container .project2 .rank table .w25_perc {
+  width: 25%;
+}
+.container .project2 .rank table .w40_perc {
+  width: 40%;
+}
