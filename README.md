@@ -65,13 +65,53 @@
 	appearance:none;
 	-moz-appearance:none; /* Firefox */
 	-webkit-appearance:none; /* Safari 和 Chrome */
-  n:设置一个元素为 box-sizing: border-box; 时，
-  此元素的内边距和边框不再会增加它的宽度。
+  n:##设置一个元素为 box-sizing: border-box; 此元素的内边距和边框不再会增加它的宽度。##
 	* {
 	 box-sizing:border-box;
 	 -moz-box-sizing:border-box; /* Firefox */
 	 -webkit-box-sizing:border-box; /* Safari */
 	}
+  o：css3tab切换
+	[id^='tab']:checked~label *tabtitle*
+	[id^='tab']:checked ~ [id^='tab_menu'] *tabcontent*
+  p: 清除浮动
+	.clearfix:after{
+	    content:"";
+	    display: block;
+	    clear:both;
+	}
+7.[flex-弹性布局](http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html)
+	任何一个容器都可以指定为Flex布局 display: flex;
+	行内元素也可以使用Flex布局;  display: inline-flex;
+	Webkit内核的浏览器，必须加上-webkit前缀;  display: -webkit-flex; /* Safari */
+
+	** 注意，设为Flex布局以后，子元素的float、clear和vertical-align属性将失效。 **
+
+	采用Flex布局的元素，称为Flex容器（flex container），简称"容器"。
+	它的所有子元素自动成为容器成员，称为Flex项目（flex item），简称"项目"。
+	
+	###
+	容器默认存在两根轴：水平的主轴（main axis）和垂直的交叉轴（cross axis）。
+	主轴的开始位置（与边框的交叉点）叫做main start，结束位置叫做main end；
+	交叉轴的开始位置叫做cross start，结束位置叫做cross end。
+	项目默认沿主轴排列。
+	单个项目占据的主轴空间叫做main size，
+	占据的交叉轴空间叫做cross size。
+
+	##容器的属性
+		flex-direction
+		flex-wrap
+		flex-flow
+		justify-content
+		align-items
+		align-content
+	##项目的属性
+		order
+		flex-grow
+		flex-shrink
+		flex-basis
+		flex
+		align-self
 ```
 
 
