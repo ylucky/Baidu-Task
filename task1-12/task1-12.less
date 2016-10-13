@@ -1,0 +1,95 @@
+*{
+	margin:0;
+	padding:0;
+	font:14px "Microsoft YaHei"
+}
+
+.container{
+
+	table{
+		width: 300px;
+		border:solid 2px #fff;
+		border-collapse:collapse;
+		thead{
+			color: #fff;
+			background: #000;
+		}
+		tbody{
+			tr:nth-child(even){
+				color: #000;
+				background: gray;
+			}
+			tr:nth-child(-n+3){
+				color: #f30;
+			}
+		}
+	}
+	section{
+		margin:20px;
+	}
+
+	.input{
+		width: 200px;
+		height: 40px;
+		background: none;
+		input:focus{
+			width: 300px;
+		}
+	}
+
+	.banner{
+		width: 300px;
+		height: 300px;
+		position: relative;
+		overflow: hidden;
+		.tab{
+			height: 50px;
+			float: left;
+			label{
+				display: flex;
+				span{
+					padding: 15px;
+					border:solid 1px #f30;
+				}
+				input{
+					display: none;
+				}
+				input:checked~span{
+					background: yellow;
+					display: block;
+				}
+				input:checked~p{
+					animation:.5s banner linear;
+					display: block;
+				}
+			}
+
+			p{
+				position: absolute;
+				left: 0;
+				top:60px;
+				width: 300px;
+				height: 200px;
+				background: blue;
+			}
+			p.none{
+				display: none;
+			}
+		}
+		.tab:nth-child(2) p{
+			background: #f30;
+		}
+		.tab:nth-child(3) p{
+			background: green;
+		}
+	}
+}
+
+@keyframes banner{
+	 0% {
+	    left: -100%
+	  }
+	  100% {
+	    left: 0%;
+	  }
+}

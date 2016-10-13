@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  font: 14px "Microsoft YaHei";
+}
+.container table {
+  width: 300px;
+  border: solid 2px #fff;
+  border-collapse: collapse;
+}
+.container table thead {
+  color: #fff;
+  background: #000;
+}
+.container table tbody tr:nth-child(even) {
+  color: #000;
+  background: gray;
+}
+.container table tbody tr:nth-child(-n+3) {
+  color: #f30;
+}
+.container section {
+  margin: 20px;
+}
+.container .input {
+  width: 200px;
+  height: 40px;
+  background: none;
+}
+.container .input input:focus {
+  width: 300px;
+}
+.container .banner {
+  width: 300px;
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+}
+.container .banner .tab {
+  height: 50px;
+  float: left;
+}
+.container .banner .tab label {
+  display: flex;
+}
+.container .banner .tab label span {
+  padding: 15px;
+  border: solid 1px #f30;
+}
+.container .banner .tab label input {
+  display: none;
+}
+.container .banner .tab label input:checked ~ span {
+  background: yellow;
+  display: block;
+}
+.container .banner .tab label input:checked ~ p {
+  animation: .5s banner linear;
+  display: block;
+}
+.container .banner .tab p {
+  position: absolute;
+  left: 0;
+  top: 60px;
+  width: 300px;
+  height: 200px;
+  background: blue;
+}
+.container .banner .tab p.none {
+  display: none;
+}
+.container .banner .tab:nth-child(2) p {
+  background: #f30;
+}
+.container .banner .tab:nth-child(3) p {
+  background: green;
+}
+@keyframes banner {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 0%;
+  }
+}

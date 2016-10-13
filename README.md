@@ -112,6 +112,34 @@
 		flex-basis
 		flex
 		align-self
+8.移动端
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+	<meta content="yes" name="apple-mobile-web-app-capable">
+	<meta content="black" name="apple-mobile-web-app-status-bar-style">
+	<meta content="telephone=no" name="format-detection">
+
+	第一个meta标签表示：强制让文档的宽度与设备的宽度保持1:1，并且文档最大的宽度比例是1.0，且不允许用户点击屏幕放大浏览；
+	第二个meta标签是iphone设备中的safari私有meta标签，它表示：允许全屏模式浏览；
+	第三个meta标签也是iphone的私有标签，它指定的iphone中safari顶端的状态条的样式；
+	第四个meta标签表示：告诉设备忽略将页面中的数字识别为电话号码  
+9.CSS3 :  
+	:nth-child(n) 选择器匹配属于其父元素的第 N 个子元素，不论元素的类型。  
+	:nth-of-type() 选择器，该选择器选取父元素的第 N 个指定类型的子元素。  
+
+	奇数和偶数:  p:nth-child(even)或p:nth-child(odd)  
+	公式：使用公式 (an + b)。描述：表示周期的长度，n 是计数器（从 0 开始），b 是偏移值。  
+	  ##
+	  正方向范围:nth-child(n+6) 选中从第6个开始的子元素  
+	  负方向范围:nth-child(-n+9) 选中从第1个到第9个子元素  
+	  前后限制范围：nth-child(n+4):nth-child(-n+8) 选中第4-8个子元素 
+	  范围高级用法：nth-child(n+2):nth-child(odd):nth-child(-n+9)
+	  	奇数位/偶数位子元素，选中的子元素是从第2位到第9位，并且只包含奇数位。  
+	  间隔选择子元素：nth-child(3n+1):nth-child(even)  
+	  	使用 :nth-child(3n+1) 我们可以每隔3个选中一个，也就是第 1, 4, 7 和 10 个子元素，但通过使用 :nth-child(even) 我们过滤掉了奇数位子元素，也就是 1 和 7，于是，剩下的子元素只有 4 和 10。
+	  ##
+
+
+
 ```
 
 
